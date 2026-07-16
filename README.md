@@ -15,7 +15,6 @@ Traditional gesture-controlled interfaces require specialized hardware: depth ca
 
 Single-model pipelines typically fail silently. If hand tracking drifts or an intent is misclassified, errors propagate directly to the render layer, causing glitchy and erratic visual behavior. HoloSwarm solves this architecturally by introducing a dedicated **Critic** agent that audits the intermediate streams and feeds corrections back into the message loop recursively.
 
-
 ## 2. Architecture
 
 The system is composed of five specialized agents running as independent processes and communicating asynchronously over **Redis pub/sub**.
