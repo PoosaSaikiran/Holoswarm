@@ -79,9 +79,6 @@ The Critic maintains a rolling sliding-window buffer of output frames from each 
 * **3D Engine:** Three.js (WebGL rendering)
 * **Message Broker:** Redis (Asynchronous pub/sub orchestration & correction pipelines)
 * **Runtime:** Node.js (For backend agent processes) & Browser (For the Render layer)
-
----
-
 ## 4. Retrospective (Hackathon Lessons)
 
 ### What Worked 
