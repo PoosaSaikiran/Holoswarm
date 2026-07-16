@@ -7,7 +7,6 @@
 
 HoloSwarm is a camera-only, gesture-controlled 3D interface driven by a coordinated swarm of five specialized agents. A dedicated **Critic** agent audits the system state in real time, detecting anomalies and publishing correction vectors dynamically over Redis pub/sub to achieve self-correcting loop stability.
 
-
 ## 1. Motivation
 
 Traditional gesture-controlled interfaces require specialized hardware: depth cameras, sensory gloves, or infrared emitters. **HoloSwarm** answers a simpler question:
