@@ -5,9 +5,7 @@
 [![Hackathon Project](https://img.shields.io/badge/Hackathon-48--Hour-orange?style=for-the-badge)](https://github.com/)
 [![Tech Stack](https://img.shields.io/badge/Stack-Node.js%20%7C%20Three.js%20%7C%20Redis%20%7C%20MediaPipe-brightgreen?style=for-the-badge)](https://github.com/)
 
----
-
-HoloSwarm is a camera-only, gesture-controlled 3D interface driven by a coordinated swarm of five specialized agents. A dedicated **Critic** agent audits the system state in real time, detecting anomalies and publishing correction vectors dynamically over Redis pub/sub to achieve self-correcting loop stability.
+---HoloSwarm is a camera-only, gesture-controlled 3D interface driven by a coordinated swarm of five specialized agents. A dedicated **Critic** agent audits the system state in real time, detecting anomalies and publishing correction vectors dynamically over Redis pub/sub to achieve self-correcting loop stability.
 
 ---
 
