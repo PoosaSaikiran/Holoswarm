@@ -61,8 +61,8 @@ flowchart TD
 | ** Perception** | Normalizes webcam video feeds into 21-point hand skeletons frame-by-frame. | MediaPipe Hands Landmark Streams |
 | **Intent** | Classifies gesture sequences into structural commands (*grab*, *rotate*, *swipe*, *pinch-zoom*). | Gesture Intent Vectors |
 | **Scene** | Manages the 3D scene state and translates gesture commands into coordinates/rotations. | Three.js Scene-Graph Mutations |
-| **🖥️ Render** | Drives the WebGL render loop, drawing real-time hover glows, grab highlights, and 3D assets. | In-Browser WebGL Canvas |
-| **⚖️ Critic** | Audits landmark stability, intent transitions, and scene mutations, injecting corrections back into the swarm. | Multi-Channel Audit Logs & Redis Channels |
+| **Render** | Drives the WebGL render loop, drawing real-time hover glows, grab highlights, and 3D assets. | In-Browser WebGL Canvas |
+| **Critic** | Audits landmark stability, intent transitions, and scene mutations, injecting corrections back into the swarm. | Multi-Channel Audit Logs & Redis Channels |
 
 ### The Redis Pub/Sub Advantage
 
@@ -94,10 +94,10 @@ The Critic maintains a rolling sliding-window buffer of output frames from each 
 
 ## 4. Retrospective (Hackathon Lessons)
 
-### What Worked 🎉
+### What Worked 
 * **The Unified Correction Channel:** Routing corrections through the existing pub/sub channels allowed us to add self-correction features without complicating the individual agent code. Agents process Critic messages seamlessly as if they were standard upstream events.
 
-### What Didn't (Yet) ⚠️
+### What Didn't (Yet) 
 * **Intent Classification Jitter:** In poor lighting conditions, MediaPipe landmark jitter increases, triggering misclassifications in the Intent agent. While the Critic successfully masks these visual glitches, it acts as a filter rather than a solution. We need a confidence-weighted gesture classifier.
 
 > [!NOTE]
