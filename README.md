@@ -44,7 +44,7 @@ flowchart TD
     style Intent fill:#00ccff,stroke:#333,color:#000
     style Scene fill:#00ccff,stroke:#333,color:#000
     style Render fill:#00ccff,stroke:#333,color:#000
-```
+
 
 ### Swarm Roles & Responsibilities
 
