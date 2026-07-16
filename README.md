@@ -78,7 +78,6 @@ The Critic maintains a rolling sliding-window buffer of output frames from each 
 * **Intent Stability:** High-frequency oscillation between gestures (e.g., *grab -> release -> grab -> release* in $< 200\text{ ms}$) indicates classification jitter. The Critic suppresses the oscillation and holds the last stable state.
 * **Scene-State Sanity:** Proposed 3D object mutations that would translate items outside the viewport boundaries are intercepted and rejected before hitting the **Render** engine.
 
-> [!TIP]
 > **Graceful Degradation:** When tracking fails, HoloSwarm holds its last known stable state instead of rendering visual jitter, delivering a smoother user experience.
 
 ---
