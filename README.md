@@ -19,7 +19,7 @@ Single-model pipelines typically fail silently. If hand tracking drifts or an in
 
 The system is composed of five specialized agents running as independent processes and communicating asynchronously over **Redis pub/sub**.
 
-```mermaid
+mermaid
 flowchart TD
     Webcam[ Webcam] -->|Video Stream| Perception[Perception Agent]
     Perception -->|Normalized Landmarks| Intent[ Intent Agent]
