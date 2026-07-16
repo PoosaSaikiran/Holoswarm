@@ -1,5 +1,4 @@
 # HoloSwarm
-
 ### A Self-Correcting Multi-Agent Architecture for Gesture-Controlled Holographic Interfaces
 [![WeaveHacks 2026](https://img.shields.io/badge/Built%20at-WeaveHacks%202026-blueviolet?style=for-the-badge)](https://github.com/)
 [![Hackathon Project](https://img.shields.io/badge/Hackathon-48--Hour-orange?style=for-the-badge)](https://github.com/)
