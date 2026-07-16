@@ -101,8 +101,6 @@ The Critic maintains a rolling sliding-window buffer of output frames from each 
 - [ ] **Phase 4: ML-Powered Critic**
   - Replace the Critic's rule-based validation script with a learned anomaly detection model, closing the recursive self-improvement loop.
 
----
-
 ## 6. Why This Architecture Generalizes
 
 The Critic design pattern is not restricted to computer vision or gesture recognition. It solves a fundamental problem in any multi-agent pipeline where upstream errors propagate silently:
