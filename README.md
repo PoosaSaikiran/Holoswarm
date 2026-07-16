@@ -28,14 +28,14 @@ The system is composed of five specialized agents running as independent process
 
 ```mermaid
 flowchart TD
-    Webcam[ Webcam] -->|Video Stream| Perception[👁️ Perception Agent]
-    Perception -->|Normalized Landmarks| Intent[🎯 Intent Agent]
+    Webcam[ Webcam] -->|Video Stream| Perception[Perception Agent]
+    Perception -->|Normalized Landmarks| Intent[ Intent Agent]
     Intent -->|Gesture Intents| Scene[ Scene Agent]
     Scene -->|Scene Graph Mutations| Render[ Render Agent]
     Render -->|Frame Updates| Screen[ Holographic Display]
 
     %% Critic feedback loops
-    Critic[⚖️ Critic Agent] -.->|Anomalies Detected| Critic
+    Critic[ Critic Agent] -.->|Anomalies Detected| Critic
     Critic -.->|Correction: Re-anchor| Perception
     Critic -.->|Correction: Hold Intent| Intent
     Critic -.->|Correction: Bound Mutations| Scene
@@ -58,9 +58,9 @@ flowchart TD
 
 | Agent | Responsibility | Data Handled |
 | :--- | :--- | :--- |
-| **👁️ Perception** | Normalizes webcam video feeds into 21-point hand skeletons frame-by-frame. | MediaPipe Hands Landmark Streams |
-| **🎯 Intent** | Classifies gesture sequences into structural commands (*grab*, *rotate*, *swipe*, *pinch-zoom*). | Gesture Intent Vectors |
-| **🎬 Scene** | Manages the 3D scene state and translates gesture commands into coordinates/rotations. | Three.js Scene-Graph Mutations |
+| ** Perception** | Normalizes webcam video feeds into 21-point hand skeletons frame-by-frame. | MediaPipe Hands Landmark Streams |
+| **Intent** | Classifies gesture sequences into structural commands (*grab*, *rotate*, *swipe*, *pinch-zoom*). | Gesture Intent Vectors |
+| **Scene** | Manages the 3D scene state and translates gesture commands into coordinates/rotations. | Three.js Scene-Graph Mutations |
 | **🖥️ Render** | Drives the WebGL render loop, drawing real-time hover glows, grab highlights, and 3D assets. | In-Browser WebGL Canvas |
 | **⚖️ Critic** | Audits landmark stability, intent transitions, and scene mutations, injecting corrections back into the swarm. | Multi-Channel Audit Logs & Redis Channels |
 
