@@ -91,9 +91,7 @@ The Critic maintains a rolling sliding-window buffer of output frames from each 
 * **Intent Classification Jitter:** In poor lighting conditions, MediaPipe landmark jitter increases, triggering misclassifications in the Intent agent. While the Critic successfully masks these visual glitches, it acts as a filter rather than a solution. We need a confidence-weighted gesture classifier.
 
 > [!NOTE]
-> *HoloSwarm was developed during a 48-hour hackathon. The performance observations above are qualitative and based on live demonstration testing. Structured latency and accuracy benchmarking are planned.*
-
----
+> *HoloSwarm was developed during a 8-hour hackathon. The performance observations above are qualitative and based on live demonstration testing. Structured latency and accuracy benchmarking are planned.*
 
 ## 5. Roadmap
 
