@@ -72,7 +72,6 @@ The Critic maintains a rolling sliding-window buffer of output frames from each 
 
 > **Graceful Degradation:** When tracking fails, HoloSwarm holds its last known stable state instead of rendering visual jitter, delivering a smoother user experience.
 
----
 
 ## 3. Technology Stack
 
