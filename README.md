@@ -12,7 +12,6 @@ HoloSwarm is a camera-only, gesture-controlled 3D interface driven by a coordina
 Traditional gesture-controlled interfaces require specialized hardware: depth cameras, sensory gloves, or infrared emitters. **HoloSwarm** answers a simpler question:
 
 > *Can a standard laptop webcam plus a swarm of specialized agents deliver a responsive, holographic-style interface—and can the system dynamically correct its own tracking and classification failures during runtime?*
-
 Single-model pipelines typically fail silently. If hand tracking drifts or an intent is misclassified, errors propagate directly to the render layer, causing glitchy and erratic visual behavior. HoloSwarm solves this architecturally by introducing a dedicated **Critic** agent that audits the intermediate streams and feeds corrections back into the message loop recursively.
 
 ## 2. Architecture
