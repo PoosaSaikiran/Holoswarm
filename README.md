@@ -1,4 +1,4 @@
-# HoloSwarm 
+# HoloSwarm
 
 ### A Self-Correcting Multi-Agent Architecture for Gesture-Controlled Holographic Interfaces
 
