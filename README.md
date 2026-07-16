@@ -1,4 +1,4 @@
-# HoloSwarm 🛸
+# HoloSwarm 
 
 ### A Self-Correcting Multi-Agent Architecture for Gesture-Controlled Holographic Interfaces
 
@@ -28,11 +28,11 @@ The system is composed of five specialized agents running as independent process
 
 ```mermaid
 flowchart TD
-    Webcam[📷 Webcam] -->|Video Stream| Perception[👁️ Perception Agent]
+    Webcam[ Webcam] -->|Video Stream| Perception[👁️ Perception Agent]
     Perception -->|Normalized Landmarks| Intent[🎯 Intent Agent]
-    Intent -->|Gesture Intents| Scene[🎬 Scene Agent]
-    Scene -->|Scene Graph Mutations| Render[🖥️ Render Agent]
-    Render -->|Frame Updates| Screen[📺 Holographic Display]
+    Intent -->|Gesture Intents| Scene[ Scene Agent]
+    Scene -->|Scene Graph Mutations| Render[ Render Agent]
+    Render -->|Frame Updates| Screen[ Holographic Display]
 
     %% Critic feedback loops
     Critic[⚖️ Critic Agent] -.->|Anomalies Detected| Critic
